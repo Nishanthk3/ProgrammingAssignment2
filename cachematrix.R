@@ -49,7 +49,7 @@ message("getting cached data")
 return(inverseValue)
 }
 # if not, caclulate the inverse of the matrix and store it in the cache
-data <- y$getMatrix()
+data <- x$getMatrix()
 inverseValue <- solve(data)
 x$setInverse(inverseValue)
 # return the inverseValue
